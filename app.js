@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 15000
 var mysql = require('mysql');
-app.get('/', (req, res) => {
+app.get('/test', (req, res) => {
   var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'db_test',
